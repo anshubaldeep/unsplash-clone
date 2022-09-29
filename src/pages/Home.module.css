@@ -1,0 +1,60 @@
+.coverImage {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+
+.headerText {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerBody {
+  margin-top: 2em;
+  width: 50%;
+}
+
+.headerSpans {
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+.photoArea {
+  column-gap: 24px;
+  align-items: start;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  margin-top: 6em;
+  padding: 2em;
+}
+
+.columnGrid {
+  display: grid;
+  grid-template-columns: minmax(0px, 1fr);
+  row-gap: 24px;
+}
+
+.imageStyle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .headerBody {
+    margin-top: 2em;
+    width: 80%;
+  }
+}
