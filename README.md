@@ -5,7 +5,7 @@ This project was created as part of a Tophire Assignment infinite scrolling and 
 Kindly view the project demo video present inside the root directory.
 
 Created with ReactJS, MaterialUI, Vite, Unsplash API and love by - [Baldeep Singh](https://baldeep-singh.netlify.app/) 
-Deployed on : [App Demo](https://calories-app.netlify.app/).
+Deployed on : [App Demo](https://unsplash-clone-wine.vercel.app).
 
 ## Steps to run
 
