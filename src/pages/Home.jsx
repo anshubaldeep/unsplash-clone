@@ -10,6 +10,7 @@ export const Home = () => {
   const [page, setPage] = useState(-1);
   const [photos, setPhotos] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [random, setRandom] = useState(null);
   const totalPages = useRef(null);
 
   const loadRef = useRef(null);
@@ -35,6 +36,7 @@ export const Home = () => {
   const handleNewSearch = () => {
     setPhotos([]);
     setPage(1);
+    setRandom(Math.random());
   };
 
   const searchPhotos = () => {
@@ -71,7 +73,7 @@ export const Home = () => {
       return;
     }
     searchPhotos();
-  }, [page]);
+  }, [page, random]);
 
   return (
     <div

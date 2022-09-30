@@ -21,6 +21,11 @@ const Searchbar = ({ handleSubmit, searchValue, setSearchValue }) => {
         value={searchValue}
         focused
         color="warning"
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') {
+            handleSubmit(searchValue);
+          }
+        }}
       />
       <IconButton
         sx={{
