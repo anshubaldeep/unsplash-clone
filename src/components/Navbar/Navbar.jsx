@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import classes from './Navbar.module.css';
@@ -30,8 +31,8 @@ const Navbar = ({ handleSubmit, searchValue, setSearchValue }) => {
         <div className={classes.navShadow}>
           <nav className={classes.mainNav}>
             <ul className={openNav ? classes.active : classes.inactive}>
-              <li>Advertise</li>
-              <li>Blog</li>
+              <li><a>Advertise</a></li>
+              <li><a>Blog</a></li>
               <li>
                 <Button variant="outlined" size="medium" onClick={() => {}}>
                   Submit
